@@ -1,0 +1,18 @@
+{
+  "name": "next-action-list",
+  "version": "1.0.0",
+  "description": "A simple next-action list for everyday life activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "todo",
+    "next action list",
+    "tasks",
+    "task",
+    "recurring"
+  ],
+  "author": "Chessurisme",
+  "license": "MIT"
+}
