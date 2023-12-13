@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules
+
+# VS Code
+.vscode
+
+# Environment configuration
+.env
+
+# Compiled output
+public/build
+
+# Coverage of test
+coverage
+
+# OS-specific files
+.DS_Store
+Thumbs.db
