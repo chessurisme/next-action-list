@@ -8,7 +8,7 @@ global.window = dom.window;
 global.document = window.document;
 global.HTMLElement = window.HTMLElement;
 
-describe('setAtrributes function', () => {
+describe('setAttributes function', () => {
   it('should set attributes on a valid DOM element', () => {
     const apple = document.createElement('div');
     const attributes = {
@@ -25,14 +25,14 @@ describe('setAtrributes function', () => {
   it('should not set attributes with invalid keys or values', () => {
     const element = document.createElement('div');
     const attributes = {
-      id: 'myId',
+      id: 'apple',
       class: null,
       data: undefined
     };
 
     setAttributes(element, attributes);
 
-    expect(element.id).toBe('myId');
+    expect(element.id).toBe('apple');
     expect(element.className).toBe('');
     expect(element.getAttribute('data')).toBe(null);
   });
@@ -79,14 +79,14 @@ describe('setAtrributes function', () => {
   it('should not set attributes with invalid keys or values', () => {
     const element = document.createElement('div');
     const attributes = {
-      id: 'myId',
+      id: 'apple',
       class: null,
       data: undefined
     };
 
     setAttributes(element, attributes);
 
-    expect(element.id).toBe('myId');
+    expect(element.id).toBe('apple');
     expect(element.className).toBe('');
     expect(element.getAttribute('data')).toBe(null);
   });
