@@ -1,12 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-  fetch('layout.hbs')
+import Handlebars from "handlebars";
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('./templates/layout.hbs')
     .then(response => response.text())
     .then(templateSource => {
 
       const template = Handlebars.compile(templateSource);
 
-      const html = template(data);
+      const layout = template();
 
-      document.body.appendChild(html);
+      document.body.innerHTML = layout;
     });
 })
