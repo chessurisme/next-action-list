@@ -6,10 +6,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 header {
-  background-color: blueviolet;
+  background-color: var(--red);
   height: 200px;
 }
