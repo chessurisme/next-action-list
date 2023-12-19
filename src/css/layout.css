@@ -1,25 +1,32 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100dvh;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  height: 100dvh;
+  position: relative;
 }
 
 header {
   background-color: var(--red);
   height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 main {
-  margin-top: 60px;
-  margin-bottom: 80px;
+  height: calc(100dvh - 50px - 70px);
+  margin-top: 50px;
+  margin-bottom: 70px;
+  overflow-y: auto;
 }
 
 footer {
   background-color: var(--orange);
   height: 70px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
